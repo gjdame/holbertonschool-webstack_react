@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 import PropTypes from "prop-types";
 
 export default class Counter extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: 98 };
+    this.state = {value: this.props.initValue};
   }
   render() {
     return <div>{this.state.value}</div>;
