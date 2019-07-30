@@ -8,7 +8,7 @@ export default class Counter extends React.Component {
     this.handleclick = this.handleclick.bind(this);
   }
 
-  // handles click to set value to 1000 from initValue or null
+  // handles click to increase value by 1
   handleclick() {
     this.setState(state => ({
       value: (state.value + 1)
