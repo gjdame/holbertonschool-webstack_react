@@ -19,6 +19,7 @@ export default class App extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     this.state.items.push(this.state.inputValue);
+    this.setState({ inputValue: "" });
   }
 
   render() {
